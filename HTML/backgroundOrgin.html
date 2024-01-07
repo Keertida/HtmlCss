@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #example1 {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(https://images.pexels.com/photos/349758/hummingbird-bird-birds-349758.jpeg?cs=srgb&dl=pexels-pixabay-349758.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+}
+
+#example2 {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(https://images.pexels.com/photos/349758/hummingbird-bird-birds-349758.jpeg?cs=srgb&dl=pexels-pixabay-349758.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-origin: content-box, border-box;
+}
+
+#example3 {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(https://images.pexels.com/photos/349758/hummingbird-bird-birds-349758.jpeg?cs=srgb&dl=pexels-pixabay-349758.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-origin: content-box, content-box;
+}
+  </style>
+</head>
+<body>
+  <h2>background-origin: content-box, padding-box:</h2>
+  <div id="example1"></div>
+  <h2>background-origin: content-box, border-box:</h2>
+  <div id="example2"></div>
+  <h2>background-origin: content-box, content-box:</h2>
+  <div id="example3"></div>
+</body>
+</html>

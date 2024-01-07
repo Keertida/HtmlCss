@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation-name: example;
+      animation-duration: 3s;
+      /* animation-play-state: ; */
+      animation-fill-mode: forwards;
+    }
+    @keyframes example {
+      from {top: 0px;}
+      to {top: 200px; background-color: blue;}
+    }
+  </style>
+</head>
+
+<body>
+
+  <div></div>
+
+</body>
+
+</html>
+
+<!-- none - Default value. Animation will not apply any styles to the element before or after it is executing
+forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions -->
