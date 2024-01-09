@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Fading Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fade-in').click(function () {
+                $('img').fadeIn('fast');
+            });
+            $('#fade-out').click(function () {
+                $('img').fadeOut(400);
+            });
+            $('#toggle-fading').click(function () {
+                $('img').fadeToggle('slow');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="fade-in">Fade In</button>
+    <button id="fade-out">Fade Out</button>
+    <button id="toggle-fading">Toggle Fading</button>
+    <img src="/Images/duck.jpg">
+</body>
+
+</html>

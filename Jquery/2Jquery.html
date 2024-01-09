@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+        // This event is triggered when the entire webpage, including all its resources like images and stylesheets, has finished loading. 
+        window.onload = function () {
+            alert('window loaded');
+        };
+        // It doesn't wait for external resources like images to finish loading, making it faster than window.onload().
+        $(document).ready(function () {
+            alert('document loaded');
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Demo: window.onload() vs $(document).ready()</h1>
+</body>
+
+</html>

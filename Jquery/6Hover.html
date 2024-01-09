@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Hover Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    #hover-div {
+      width: 200px;
+      height: 100px;
+      background-color: #ecf316;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+
+    #hover-div:hover {
+      background-color: #18f0ff;
+    }
+  </style>
+</head>
+<body>
+
+<div id="hover-div">Hover over me</div>
+
+<script>
+  $(document).ready(function() {
+    // Hover function
+    $("#hover-div").hover(
+      function() {
+        // Mouseenter handler
+        $(this).css("color", "blue");
+      },
+      function() {
+        // Mouseleave handler
+        $(this).css("color", "black");
+      }
+    );
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery example: slideUp(), slideDown(), and slideToggle()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#b1').click(function () { 
+                $('img').slideDown('slow'); 
+            });
+
+            $('#b2').click(function () { 
+                $('img').slideUp(4000); 
+            });
+
+            $('#b3').click(function () { 
+                $('img').slideToggle('2000'); 
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id='b1'>Slide Down</button>
+    <button id='b2'>Slide Up</button>
+    <button id='b3'>Toggle Sliding</button>
+    <img src='/Images/duck.jpg'>
+</body>
+
+</html>
